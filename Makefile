@@ -8,10 +8,10 @@ LDFLAGS  = -g
 hr:         HRApp.o Manager.o Employee.o main.o
 	        ${CXX} ${LDFLAGS} -o hr HRApp.o Manager.o Employee.o  main.o 
 
-testEmployee.o: testEmployee.cpp Employee.h
+##testEmployee.o: testEmployee.cpp Employee.h
 Employee.o:     Employee.cpp Employee.h
 
-testManager.o:  testManager.cpp Manager.h Employee.h
+##testManager.o:  testManager.cpp Manager.h Employee.h
 Manager.o:      Manager.cpp Manager.h 
 
 main.o:         main.cpp HRApp.h
